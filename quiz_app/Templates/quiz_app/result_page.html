@@ -1,0 +1,8 @@
+{% extends "quiz_app/base.html" %}
+{% block content %}
+  <div>
+    <h1>Ваш результат</h1>
+      <h3>{{ result }} из 1</h3>
+  </div>
+    <a class="button" href={% url 'main_page'%}>Вернуться на главную</a>
+{% endblock %}

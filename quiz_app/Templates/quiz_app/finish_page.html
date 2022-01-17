@@ -1,0 +1,8 @@
+{% extends "quiz_app/base.html" %}
+{% block content %}
+  <div>
+    <h1>Ура! Вы ответили на все вопросы. Теперь вы можете узнать результат, или, если не уверены в своих ответах, начать тест сначала.</h1>
+      <a href={% url 'result_page'%}><div class="button">Узнать результат</div></a>
+      <a class="button" href={% url 'question_page' question.id %}>Вернуться в начало</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,47 @@
+body{
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+}
+.page-title{
+    text-align: center;
+}
+.page-content{
+    max-width:60%;
+    margin:auto;
+    margin-top:50px;
+    border:3px solid black;
+    border-radius: 35px;
+    padding:35px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.color_black{
+    color: black;
+}
+.button{
+    color:white;
+    width: 200px;
+    height: 50px;
+    background: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20px;
+    margin-top:20px;
+}
+button{
+    color:white;
+    width:200px;
+    height:50px;
+    font-size: 20px;
+    background: black;
+    text-align: center;
+    border-radius: 15px;
+}
+label{
+    font-size: 20px;
+}

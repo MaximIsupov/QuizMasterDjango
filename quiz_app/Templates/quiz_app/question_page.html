@@ -1,0 +1,20 @@
+{% extends "quiz_app/base.html" %}
+{% block content %}
+    {% if next_question_id > 0 %}
+        <form method="get" action={% url 'question_page' next_question_id %}>
+    {% else %}
+        <form method="get" action={% url 'finish_page' %} >
+    {% endif %}
+    <h1>{{ question }}</h1>
+      {% for choice in choices %}
+          <p>
+          <input type="checkbox" id="choice_{{ choice.id }}" value={{ choice.id }} name="answer"/>
+          <label for="choice_{{ choice.id }}">{{ choice.choice_char }}) {{ choice.text }}</label>
+          </p>
+      {% endfor %}
+    {% if prev_question_id != 0 %}
+    <p><a class="color_black" href={% url 'question_page' prev_question_id %}>Вернуться к предыдущему вопросу</a></p>
+    {% endif %}
+    <button type="submit">Ответить</button>
+  </form>
+{% endblock %}

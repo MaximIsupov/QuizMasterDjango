@@ -1,0 +1,7 @@
+{% extends "quiz_app/base.html" %}
+{% block content %}
+  <div>
+    <h1>Здравствуйте. Вам предстоит пройти небольшой тест на знание основ языка Python. Нажмите кнопку ниже, чтобы начать прохождение теста</h1>
+      <a class="button" href={% url 'question_page' question.id %}>Начать</a>
+  </div>
+{% endblock %}
